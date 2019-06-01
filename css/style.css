@@ -1,0 +1,207 @@
+@media screen, print {
+    /* remove browser auto margins/paddings/border */
+    html, input, body, ul, ol, li p, h1, h2, h3, h4, h5, h6, form, fieldset, a { 
+        margin: 0; 
+        padding: 0; 
+        border: 0; 
+    }
+    
+    body {
+	    counter-reset: index;
+    }
+    
+    ol { margin-left: 20px; }
+    
+    /* basic font setup */
+    body, input{
+        font-size: 100.01%;
+        background-color: #fff;
+        font-family: Arial, Verdana, Helvetica, sans-serif;
+    }
+    
+    body {
+    	background-color: black;
+    }
+    
+    /* gap for paragraphs */
+    p{
+        margin-top: 10px; 
+    }
+    
+    /* Remove border around images that are links */
+    a img{ border: 0px; }
+    
+    /* remove padding from tables */
+	table{ border-collapse:collapse; }
+	
+	pre { font-size: 0.1em;}
+	
+	/* content on the left side of the page */
+	#content { 
+		background-color: white;
+	}
+
+	/* submenu below content */
+	#submenu {
+		font-size: 80%;
+		padding: 10px;
+		background-color: black;
+		color: #333;
+	}
+
+	#submenu a { color: #333; text-decoration:none; }
+
+	.tooltip:hover:after { content: attr(title); }
+
+	.tooltip { 
+		border-bottom: 1px dotted #333; 
+		position: relative; 
+		cursor:pointer; 
+	}  
+	.tooltip:hover:after { 
+		content: attr(title); 
+		position: absolute; 
+		white-space: nowrap; 
+		background: rgba(60, 60, 60, 0.75); 
+		padding: 3px 7px; 
+		border: 1px solid white;
+		color: #FFF; 
+		border-radius: 3px;
+		-moz-border-radius: 3px; 
+		-webkit-border-radius: 3px; 
+		margin-left: 7px; margin-top: -3px; 
+		font-size: 1.3em;
+	}
+
+	#content, #submenu {
+		width: 330px;
+		float: left;
+	}
+
+	/* Informatin on the right side of the page */
+	#information {
+		width: 50%;
+		color: white;
+		float: left;
+		padding: 0px 10px;
+	}
+	
+	#extra {
+		background-color: gray;
+	}
+	
+	H1 {
+		font-size: 7em;
+		white-space: nowrap;
+	}
+	
+	i {color: lightgray;}
+	
+	#information H2:before {
+    content: counter(index) ". ";
+    counter-increment: index;  /* Add 1 to index */
+}
+	
+	#menu {
+		font-size: 3em;
+		margin-left: 20px;
+	}
+	
+	#menu input {
+		text-align: center;
+		color: white;
+		background-color: gray;
+		width: 140px;
+	}
+	
+	#menu a {
+		text-decoration: none;
+		font-weight: bold;
+		text-align: center;
+		padding-left: 20px;
+		padding-right: 20px;
+		background-color: gray;
+		color: white;
+	}
+
+
+	
+	/* label before ingreditent */ 
+	label { width: 140px; table; float: left; margin-left: 12px;}
+	
+	/* ingredient input text */
+	.ingredient {
+		border: 0px; 
+		text-align: right;
+		font-weight: bold;
+		left: 0px;
+		float: left;
+		width: 100px;
+		margin-right: 4px;
+	}
+	
+	.circle {
+		font-size: 10em;
+		position: absolute;
+		line-height: 0.1em;
+		left: 300px;
+		z-index: 1000;
+		display: none;
+	}
+	
+	.number {
+		font-size: 3em;
+		color: white;
+		z-index: 100;
+		float: left;
+		margin-left: 10px;
+		margin-right: 6px;
+		width: 40px;
+		text-align: center;
+		background-color: #000;
+	}
+	
+	/* not displayed, only printed */
+	.hidden {
+		display: none;
+	}
+
+}
+
+@media screen {
+    body {
+        font-size: 100.01%;
+    }
+}
+
+@media print {
+    body{
+        color: #000;
+    }
+
+	#information {
+		width: 96%; }
+	#menu {float: right;}
+	#content {
+		width: 330px;
+		float: left;
+	}
+    /* hide is not displayed during print */
+    .hide, .noprint{
+        display: none;
+    }
+    
+   	.hidden {
+   		display: block;
+   	}
+	#menu {color: lightgray; font-size: 2em; clear:both;}
+	#menu:before {
+    		content:  "fyrir";
+	}
+}
+
+
+
+
+
+
