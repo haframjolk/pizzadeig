@@ -1,14 +1,37 @@
+// Each ingredient has a name, a base unit size and an HTML element
+class Ingredient {
+    constructor(name, baseUnitSize, element) {
+        this.name = name;
+        this.baseUnitSize = baseUnitSize;
+        this.element = element;
+    }
+    getMultipliedValue(base) {
+        return this.baseUnitSize * base;
+    }
+    updateValue(newValue) {
+        this.element.textContent = newValue;
+    }
+    updateAmount(newBase) {
+        this.updateValue(this.baseUnitSize * newBase);
+    }
+}
+
+// All ingredients that need to be updated
+const ingredients = [
+    new Ingredient("water",      65,  document.getElementById("water")),
+    new Ingredient("oil",        10,  document.getElementById("oil")),
+    new Ingredient("yeast",      1.5, document.getElementById("yeast")),
+    new Ingredient("salt",       2,   document.getElementById("salt")),
+    new Ingredient("brownsugar", 3,   document.getElementById("brownsugar")),
+    new Ingredient("flour",      100, document.getElementById("flour")),
+];
+
 function changePizzas(numberOfPizzas) {
     updateIngredients(numberOfPizzas);
 }
 
 function updateIngredients(base) {
-    changeInputText("water", 65 * base);
-    changeInputText("oil", 10 * base);
-    changeInputText("yeast", 1.5 * base);
-    changeInputText("salt", 2 * base);
-    changeInputText("brownsugar", 3 * base);
-    changeInputText("flour", 100 * base);
+    ingredients.forEach(ingredient => ingredient.updateAmount(base));
 }
 
 // idRef is the ID of the element

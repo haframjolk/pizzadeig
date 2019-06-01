@@ -21,10 +21,15 @@
         background-color: #fff;
         font-family: Arial, Verdana, Helvetica, sans-serif;
 	}
-	
-	fieldset[name="ingredients"] {
-		display: flex;
-		padding: 0 1em;
+
+	.ingredients {
+		width: 100%;
+	}
+	.ingredients th {
+		text-align: left;
+	}
+	.ingredients td {
+		text-align: right;
 	}
     
     /* gap for paragraphs */
@@ -132,7 +137,7 @@
 	}
 	
 	/* ingredient input text */
-	.ingredient {
+	/* .ingredients tbody td {
 		border: 0px; 
 		text-align: right;
 		font-weight: bold;
@@ -140,7 +145,7 @@
 		float: left;
 		width: 100px;
 		margin-right: 4px;
-	}
+	} */
 	
 	.circle {
 		font-size: 10em;

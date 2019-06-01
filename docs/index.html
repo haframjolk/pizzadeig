@@ -28,40 +28,34 @@
                 <div id="contentX" style="display:inline;"></div>
                 <button id="plus-btn">+</button>
             </div>
-            <br>
-            <fieldset name="ingredients">
-                <legend>Innihald</legend>
-                <label>Vatn <i>(30°C+)</i>
-                    <span class="value">
-                        <input type="text" id="water" value="260" disabled="" class="ingredient"> g
-                    </span>
-                </label>
-                <label>Olía
-                    <span class="value">
-                        <input type="text" id="oil" value="40" disabled="" class="ingredient"> g
-                    </span>
-                </label>
-                <label>Þurrger
-                    <span class="value">
-                        <input type="text" id="yeast" value="6" disabled="" class="ingredient"> g
-                    </span>
-                </label>
-                <label>Salt
-                    <span class="value">
-                        <input type="text" id="salt" value="8" disabled="" class="ingredient"> g
-                    </span>
-                </label>
-                <label>Púðursykur
-                    <span class="value">
-                        <input type="text" id="brownsugar" value="12" disabled="" class="ingredient"> g
-                    </span>
-                </label>
-                <label>Hveiti
-                    <span class="value">
-                        <input type="text" id="flour" value="400" disabled="" class="ingredient"> g
-                    </span>
-                </label>
-            </fieldset>
+            <h2>Innihald</h2>
+            <table class="ingredients">
+                <tbody>
+                    <tr>
+                        <th>Vatn (30°C+)</th>
+                        <td><span id="water">260</span> g</td>
+                    </tr>
+                    <tr>
+                        <th>Olía</th>
+                        <td><span id="oil">40</span> g</td>
+                    <tr>
+                        <th>Þurrger</th>
+                        <td><span id="yeast">6</span> g</td>
+                    </tr>
+                    <tr>
+                        <th>Salt</th>
+                        <td><span id="salt">8</span> g</td>
+                    </tr>
+                    <tr>
+                        <th>Púðursykur</th>
+                        <td><span id="brownsugar">12</span> g</td>
+                    </tr>
+                    <tr>
+                        <th>Hveiti</th>
+                        <td><span id="flour">400</span> g</td>
+                    </tr>
+                </tbody>
+            </table>
         </form>
     </section>
     <aside class="info">
