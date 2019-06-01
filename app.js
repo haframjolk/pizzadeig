@@ -8,7 +8,7 @@ function updateIngredients(base) {
     changeInputText("yeast", 1.5 * base);
     changeInputText("salt", 2 * base);
     changeInputText("brownsugar", 3 * base);
-    changeInputText("wheet", 100 * base);
+    changeInputText("flour", 100 * base);
 }
 
 // idRef is the ID of the element
@@ -89,6 +89,8 @@ function saveNumberOfPizzas(value) {
 
 const minusBtn = document.getElementById("minus-btn");
 const plusBtn = document.getElementById("plus-btn");
+
+document.myForm.addEventListener("submit", e => e.preventDefault());
 
 minusBtn.addEventListener("click", () => {
     changeInputNumberValue(document.myForm.number_of_pizzas.id, -1);
