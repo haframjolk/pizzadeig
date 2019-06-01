@@ -132,7 +132,14 @@
 		background-color: gray;
 		color: white;
 		border: 0;
+		outline: transparent;
 		cursor: pointer;
+	}
+	#menu button:hover {
+		background-color: #666;
+	}
+	#menu button:active {
+		background-color: #444;
 	}
 
 
