@@ -55,7 +55,7 @@ function changeInputText(idRef, val) {
 
 var area = document.createElement("input");
 area.id = "number_of_pizzas";
-area.onkeyup = "changePizzaz(value);";
+area.onkeyup = "changePizzas(value);";
 
 document.querySelector("#contentX").appendChild(area);
 
