@@ -16,7 +16,7 @@ function updateIngredients(base) {
 function changeInputNumberValue(idRef, change) {
     var valueWithChange = 0;
     // only add/subtract
-    if (change == -1 || change == +1 ) {
+    if (change == -1 || change == +1) {
         valueWithChange = parseInt(getValue(idRef)) + change;
     }
     else {
@@ -27,7 +27,7 @@ function changeInputNumberValue(idRef, change) {
     changePizzas(valueWithChange);
     }
     else {
-        changeInputText( idRef, 1);
+        changeInputText(idRef, 1);
     }
     saveNumberOfPizzas(area.value);
 }
