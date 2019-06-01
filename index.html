@@ -1,56 +1,68 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Logapizzur - deigið</title> 
-        <meta name="Author" content="Logi Helgu"> 
-        <meta name="keywords" content="pizza, pizzugerð, pizzadeig, pítsa, pítsugerð, pítsadeig, pítsudeig"> 
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
-        <meta name="description" content="Pizzudeig Loga"> 
-        <meta name="version" content="3.3.2011"> 
-        <meta http-equiv="Content-Style-Type" content="text/css"> 
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link href='images/mobile-favicon-pizza.png' sizes='144x144' rel='apple-touch-icon-precomposed' />
-                
-    </head>
 
-    <!-- LEFT COLUMN -->
-    <div id="content">
-        <h1>PIZZA</h1>
+<head>
+    <title>Logapizzur - deigið</title>
+    <meta name="Author" content="Logi Helgu">
+    <meta name="keywords" content="pizza, pizzugerð, pizzadeig, pítsa, pítsugerð, pítsadeig, pítsudeig">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Pizzudeig Loga">
+    <meta name="version" content="3.3.2011">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='images/mobile-favicon-pizza.png' sizes='144x144' rel='apple-touch-icon-precomposed' />
+</head>
+
+<body>
+
+<header id="main-header">
+    <h1>Pizzadeig Loga</h1>
+</header>
+<main>
+    <section class="recipe">
         <form name="myForm">
             <div id="log" style="color: gray;display:none;">fdsa</div>
-                <div id="menu">
-                <a href="index.html#" onclick="changeInputNumberValue(document.myForm.number_of_pizzas.id,-1);" class="noprint">-</a>
+            <div id="menu">
+                <a href="index.html#" onclick="changeInputNumberValue(document.myForm.number_of_pizzas.id,-1);"
+                    class="noprint">-</a>
                 <!-- Container for input field whose value is stored locally via javascript -->
                 <div id="contentX" style="display:inline;"></div>
-                
-                <a href="index.html#" onclick="changeInputNumberValue(document.myForm.number_of_pizzas.id,+1);" class="noprint">+</a>
-            </div>				
+
+                <a href="index.html#" onclick="changeInputNumberValue(document.myForm.number_of_pizzas.id,+1);"
+                    class="noprint">+</a>
+            </div>
             <br>
             <h2>Innihald</h2>
-            <label>Vatn<i>(30°C+)</i></label> <input type="text" id="water" value="260" disabled="" class="ingredient"> gr.<br style="clear: both;"/>
-            <label>Olía</label> <input type="text" id="oil" value="40" disabled="" class="ingredient"> gr.<br style="clear: both;"/>
-                <label>Þurrger</label> <input type="text" id="yeast" value="6" disabled="" class="ingredient"> gr.<br style="clear: both;"/>
-            <label>Salt</label> <input type="text" id="salt" value="8" disabled="" class="ingredient"> gr.<br style="clear: both;"/>
-            <label>Púðursykur</label> <input type="text" id="brownsugar" value="12" disabled="" class="ingredient"> gr.<br style="clear: both;"/>
-            <label>Hveiti</label> <input type="text" id="wheet" value="400" disabled="" class="ingredient"> gr.<br style="clear: both;"/>
+            <label>Vatn<i>(30°C+)</i></label> <input type="text" id="water" value="260" disabled="" class="ingredient">
+            gr.<br style="clear: both;" />
+            <label>Olía</label> <input type="text" id="oil" value="40" disabled="" class="ingredient"> gr.<br
+                style="clear: both;" />
+            <label>Þurrger</label> <input type="text" id="yeast" value="6" disabled="" class="ingredient"> gr.<br
+                style="clear: both;" />
+            <label>Salt</label> <input type="text" id="salt" value="8" disabled="" class="ingredient"> gr.<br
+                style="clear: both;" />
+            <label>Púðursykur</label> <input type="text" id="brownsugar" value="12" disabled="" class="ingredient">
+            gr.<br style="clear: both;" />
+            <label>Hveiti</label> <input type="text" id="wheet" value="400" disabled="" class="ingredient"> gr.<br
+                style="clear: both;" />
         </form>
-    </div>
-    <!-- LEFT COLUMN END -->		
-
-    <!-- RIGHT COLUMN -->
-    <div id="information" class="s">
-        <h1>DEIG LOGA</h1>
-        
-        <span class="noprint"><h2>Veldu fjölda pizzudeiga</h2>
-        Sláðu inn tölu eða notaðu +/- svæðin til að hækka/lækka
-        <br />
-        <br /></span>
+    </section>
+    <aside class="info">
+        <span class="noprint">
+            <h2>Veldu fjölda pizzudeiga</h2>
+            Sláðu inn tölu eða notaðu +/- svæðin til að hækka/lækka
+            <br />
+            <br />
+        </span>
         <h2>Blandaðu saman & hnoða</h2>
-        Settu öll innihaldsefnin í skál í þeirri röð sem þau eru talin upp hér og hnoðaðu þangað til að þú festist ekki við deigið ef þú potar í það (bættu við smá hveiti ef þér finnst það of klístrað þ.s. það er auðveldrara að eiga við "þétt" deig ;)
+        Settu öll innihaldsefnin í skál í þeirri röð sem þau eru talin upp hér og hnoðaðu þangað til að þú festist ekki
+        við deigið ef þú potar í það (bættu við smá hveiti ef þér finnst það of klístrað þ.s. það er auðveldrara að eiga
+        við "þétt" deig ;)
         <br />
         <br />
         <h2>Láttu hefast</h2>
-        Að lágmarki í hálftíma í skál umlukta heitu vatni en annars geturðu látið það standa við stofuhita, jafnvel inní ísskáp ef þú hefur nokkra daga.
+        Að lágmarki í hálftíma í skál umlukta heitu vatni en annars geturðu látið það standa við stofuhita, jafnvel inní
+        ísskáp ef þú hefur nokkra daga.
         <br />
         <br />
         <h2>Skiptu deiginu upp í kúlur</h2>
@@ -61,13 +73,14 @@
         Við eins mikinn hita og þú getur eða treystir þér til að elda við ;)
         <br />
         <br />
-        <a rel="license" class="noprint" style="opacity:0.4;filter:alpha(opacity=40);" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br />
+        <a rel="license" class="noprint" style="opacity:0.4;filter:alpha(opacity=40);"
+            href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License"
+            style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br />
+    </aside>
+</main>
+<br style="clear:both;">
+<br>
+<script src="app.js"></script>
+</body>
 
-    </div>
-    <!-- RIGHT COLUMN END-->
-    <br style="clear:both;">
-    <br>
-    <pre class="noprint">		Deigið - Sósan - Osturinn - Blog - Lisence</pre>
-    <script src="app.js"></script>
-</body>  
 </html>
