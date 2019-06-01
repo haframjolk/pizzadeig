@@ -6,7 +6,6 @@
         border: 0; 
 	}
 	header {
-
 		text-transform: uppercase;
 	}
     
@@ -18,10 +17,15 @@
     
     /* basic font setup */
     body, input{
-        font-size: 100.01%;
+        font-size: 1em;
         background-color: #fff;
         font-family: Arial, Verdana, Helvetica, sans-serif;
-    }
+	}
+	
+	fieldset[name="ingredients"] {
+		display: flex;
+		padding: 0 1em;
+	}
     
     /* gap for paragraphs */
     p{
@@ -98,7 +102,8 @@
 	
 	#menu {
 		font-size: 3em;
-		margin-left: 20px;
+		text-align: center;
+		margin: 0 auto;
 	}
 	
 	#menu input {
@@ -108,7 +113,8 @@
 		width: 140px;
 	}
 	
-	#menu a {
+	#menu button {
+		font-size: 1em;
 		text-decoration: none;
 		font-weight: bold;
 		text-align: center;
@@ -121,7 +127,9 @@
 
 	
 	/* label before ingreditent */ 
-	label { width: 140px; table; float: left; margin-left: 12px;}
+	label .value {
+		float: right;
+	}
 	
 	/* ingredient input text */
 	.ingredient {

@@ -87,4 +87,14 @@ function saveNumberOfPizzas(value) {
     window.localStorage.setItem("timestamp", (new Date()).getTime());
 }
 
+const minusBtn = document.getElementById("minus-btn");
+const plusBtn = document.getElementById("plus-btn");
+
+minusBtn.addEventListener("click", () => {
+    changeInputNumberValue(document.myForm.number_of_pizzas.id, -1);
+});
+plusBtn.addEventListener("click", () => {
+    changeInputNumberValue(document.myForm.number_of_pizzas.id, +1);
+});
+
 updateIngredients(document.myForm.number_of_pizzas.value);

@@ -23,28 +23,45 @@
         <form name="myForm">
             <div id="log" style="color: gray;display:none;">fdsa</div>
             <div id="menu">
-                <a href="index.html#" onclick="changeInputNumberValue(document.myForm.number_of_pizzas.id,-1);"
-                    class="noprint">-</a>
+                <button id="minus-btn">-</button>
                 <!-- Container for input field whose value is stored locally via javascript -->
                 <div id="contentX" style="display:inline;"></div>
-
-                <a href="index.html#" onclick="changeInputNumberValue(document.myForm.number_of_pizzas.id,+1);"
-                    class="noprint">+</a>
+                <button id="plus-btn">+</button>
             </div>
             <br>
-            <h2>Innihald</h2>
-            <label>Vatn<i>(30°C+)</i></label> <input type="text" id="water" value="260" disabled="" class="ingredient">
-            gr.<br style="clear: both;" />
-            <label>Olía</label> <input type="text" id="oil" value="40" disabled="" class="ingredient"> gr.<br
-                style="clear: both;" />
-            <label>Þurrger</label> <input type="text" id="yeast" value="6" disabled="" class="ingredient"> gr.<br
-                style="clear: both;" />
-            <label>Salt</label> <input type="text" id="salt" value="8" disabled="" class="ingredient"> gr.<br
-                style="clear: both;" />
-            <label>Púðursykur</label> <input type="text" id="brownsugar" value="12" disabled="" class="ingredient">
-            gr.<br style="clear: both;" />
-            <label>Hveiti</label> <input type="text" id="wheet" value="400" disabled="" class="ingredient"> gr.<br
-                style="clear: both;" />
+            <fieldset name="ingredients">
+                <legend>Innihald</legend>
+                <label>Vatn <i>(30°C+)</i>
+                    <span class="value">
+                        <input type="text" id="water" value="260" disabled="" class="ingredient"> g
+                    </span>
+                </label>
+                <label>Olía
+                    <span class="value">
+                        <input type="text" id="oil" value="40" disabled="" class="ingredient"> g
+                    </span>
+                </label>
+                <label>Þurrger
+                    <span class="value">
+                        <input type="text" id="yeast" value="6" disabled="" class="ingredient"> g
+                    </span>
+                </label>
+                <label>Salt
+                    <span class="value">
+                        <input type="text" id="salt" value="8" disabled="" class="ingredient"> g
+                    </span>
+                </label>
+                <label>Púðursykur
+                    <span class="value">
+                        <input type="text" id="brownsugar" value="12" disabled="" class="ingredient"> g
+                    </span>
+                </label>
+                <label>Hveiti
+                    <span class="value">
+                        <input type="text" id="wheet" value="400" disabled="" class="ingredient"> g
+                    </span>
+                </label>
+            </fieldset>
         </form>
     </section>
     <aside class="info">
