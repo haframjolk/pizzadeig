@@ -66,7 +66,7 @@ const area = document.createElement("input");
 area.id = "number_of_pizzas";
 area.addEventListener("keyup", () => changePizzas(this.value));
 
-document.querySelector("#contentX").appendChild(area);
+document.getElementById("input-container").appendChild(area);
 
 // place content from previous edit
 if (!area.value) {

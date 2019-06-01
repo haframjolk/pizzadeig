@@ -22,6 +22,10 @@
         font-family: Arial, Verdana, Helvetica, sans-serif;
 	}
 
+	#input-container {
+		display: inline;
+	}
+
 	.ingredients {
 		width: 100%;
 	}
