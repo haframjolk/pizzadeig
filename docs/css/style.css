@@ -35,6 +35,10 @@
 	.ingredients td {
 		text-align: right;
 	}
+	/* Units in grams */
+	.ingredients td[data-unit="gram"]::after {
+		content: " g";
+	}
     
     /* gap for paragraphs */
     p{
@@ -105,9 +109,9 @@
 	i {color: lightgray;}
 	
 	.info H2:before {
-    content: counter(index) ". ";
-    counter-increment: index;  /* Add 1 to index */
-}
+		content: counter(index) ". ";
+		counter-increment: index;  /* Add 1 to index */
+	}
 	
 	#menu {
 		font-size: 3em;
