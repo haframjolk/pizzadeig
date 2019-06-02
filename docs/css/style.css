@@ -39,6 +39,10 @@
 	.ingredients td[data-unit="gram"]::after {
 		content: " g";
 	}
+
+	#log {
+		display: none;
+	}
     
     /* gap for paragraphs */
     p{
