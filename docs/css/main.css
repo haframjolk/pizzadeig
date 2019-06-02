@@ -52,6 +52,12 @@ h1 {
     text-align: center;
     margin: 0;
 }
+a:visited, a:hover {
+    color: #3790fc;
+}
+a:active {
+    color: #014EAB;
+}
 .main-header,
 main,
 .main-footer {
@@ -145,5 +151,21 @@ kbd {
     h1 {
         font-size: 5em;
         text-align: left;
+    }
+}
+
+/* =========
+   Dark mode
+   ========= */
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: #222;
+        color: #ddd;
+    }
+    a:active {
+        color: #7bb6ff;
+    }
+    #gh-logo {
+        filter: invert(100%);
     }
 }
