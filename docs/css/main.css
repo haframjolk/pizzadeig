@@ -62,6 +62,10 @@ main,
 }
 .main-footer small {
     display: block;
+    margin-bottom: 1em;
+}
+.logo {
+    width: 2em;
 }
 #log {
     display: none;
