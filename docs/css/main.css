@@ -56,6 +56,38 @@ main,
 .main-footer {
     padding: 1em;
 }
+.main-footer {
+    text-align: center;
+}
+#log {
+    display: none;
+}
+/* ===========
+   Ingredients
+   =========== */
+.ingredients {
+    width: 100%;
+}
+.ingredients th {
+    text-align: left;
+}
+.ingredients td {
+    text-align: right;
+}
+.ingredients td[data-unit="gram"]::after {
+    content: " g";
+}
+/* ====
+   Info
+   ==== */
+.info dt {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.info dd {
+    margin-left: 0;
+    margin-bottom: 1em;
+}
 /* ====
    Menu
    ==== */
@@ -86,17 +118,6 @@ main,
 }
 #menu button:active {
     background-color: #444;
-}
-#log {
-    display: none;
-}
-.info dt {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-.info dd {
-    margin-left: 0;
-    margin-bottom: 1em;
 }
 
 /* =========
