@@ -1,0 +1,29 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    display: grid;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+}
+.main-header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "recipe info info";
+}
+.main-footer {
+    grid-area: footer;
+}
+.recipe {
+    grid-area: recipe;
+}
+.info {
+    grid-area: info;
+}
