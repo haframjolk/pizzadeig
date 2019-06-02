@@ -2,88 +2,83 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Logapizzur - deigið</title>
-    <meta name="Author" content="Logi Helgu">
-    <meta name="keywords" content="pizza, pizzugerð, pizzadeig, pítsa, pítsugerð, pítsadeig, pítsudeig">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="Pizzudeig Loga">
-    <meta name="version" content="3.3.2011">
-    <meta http-equiv="Content-Style-Type" content="text/css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link href='images/mobile-favicon-pizza.png' sizes='144x144' rel='apple-touch-icon-precomposed' />
 </head>
-
 <body>
+    <header id="main-header">
+        <h1>Pizzadeig Loga</h1>
+    </header>
+    <main>
+        <section class="recipe">
+            <span id="log"></span>
+            <form name="myForm">
+                <div id="menu">
+                    <button id="minus-btn">-</button>
+                    <div id="input-container"></div>
+                    <button id="plus-btn">+</button>
+                </div>
+                <h2>Innihald</h2>
+                <table class="ingredients">
+                    <tbody>
+                        <tr>
+                            <th>Vatn (30°C+)</th>
+                            <td id="water" data-unit="gram"></td>
+                        </tr>
+                        <tr>
+                            <th>Olía</th>
+                            <td id="oil" data-unit="gram"></td>
+                        <tr>
+                            <th>Þurrger</th>
+                            <td id="yeast" data-unit="gram"></td>
+                        </tr>
+                        <tr>
+                            <th>Salt</th>
+                            <td id="salt" data-unit="gram"></td>
+                        </tr>
+                        <tr>
+                            <th>Púðursykur</th>
+                            <td id="brownsugar" data-unit="gram"></td>
+                        </tr>
+                        <tr>
+                            <th>Hveiti</th>
+                            <td id="flour" data-unit="gram"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </section>
+        <aside class="info">
+            <dl>
+                <dt class="noprint">Veldu fjölda pizzudeiga</dt>
+                <dd class="noprint">Sláðu inn tölu eða notaðu +/- svæðin til að hækka/lækka</dd>
 
-<header id="main-header">
-    <h1>Pizzadeig Loga</h1>
-</header>
-<main>
-    <section class="recipe">
-        <span id="log"></span>
-        <form name="myForm">
-            <div id="menu">
-                <button id="minus-btn">-</button>
-                <div id="input-container"></div>
-                <button id="plus-btn">+</button>
-            </div>
-            <h2>Innihald</h2>
-            <table class="ingredients">
-                <tbody>
-                    <tr>
-                        <th>Vatn (30°C+)</th>
-                        <td id="water" data-unit="gram"></td>
-                    </tr>
-                    <tr>
-                        <th>Olía</th>
-                        <td id="oil" data-unit="gram"></td>
-                    <tr>
-                        <th>Þurrger</th>
-                        <td id="yeast" data-unit="gram"></td>
-                    </tr>
-                    <tr>
-                        <th>Salt</th>
-                        <td id="salt" data-unit="gram"></td>
-                    </tr>
-                    <tr>
-                        <th>Púðursykur</th>
-                        <td id="brownsugar" data-unit="gram"></td>
-                    </tr>
-                    <tr>
-                        <th>Hveiti</th>
-                        <td id="flour" data-unit="gram"></td>
-                    </tr>
-                </tbody>
-            </table>
-        </form>
-    </section>
-    <aside class="info">
-        <dl>
-            <dt class="noprint">Veldu fjölda pizzudeiga</dt>
-            <dd class="noprint">Sláðu inn tölu eða notaðu +/- svæðin til að hækka/lækka</dd>
+                <dt>Blandaðu saman & hnoða</dt>
+                <dd>
+                    Settu öll innihaldsefnin í skál í þeirri röð sem þau eru talin upp hér og hnoðaðu þangað til að þú festist ekki
+                    við deigið ef þú potar í það (bættu við smá hveiti ef þér finnst það of klístrað þ.s. það er auðveldrara að eiga
+                    við "þétt" deig ;)
+                </dd>
 
-            <dt>Blandaðu saman & hnoða</dt>
-            <dd>
-                Settu öll innihaldsefnin í skál í þeirri röð sem þau eru talin upp hér og hnoðaðu þangað til að þú festist ekki
-                við deigið ef þú potar í það (bættu við smá hveiti ef þér finnst það of klístrað þ.s. það er auðveldrara að eiga
-                við "þétt" deig ;)
-            </dd>
+                <dt>Láttu hefast</dt>
+                <dd>Að lágmarki í hálftíma í skál umlukta heitu vatni en annars geturðu látið það standa við stofuhita, jafnvel inní ísskáp ef þú hefur nokkra daga.</dd>
 
-            <dt>Láttu hefast</dt>
-            <dd>Að lágmarki í hálftíma í skál umlukta heitu vatni en annars geturðu látið það standa við stofuhita, jafnvel inní ísskáp ef þú hefur nokkra daga.</dd>
+                <dt>Skiptu deiginu upp í kúlur</dt>
+                <dd>Ef þú hefur tíma skaltu leyfa þeim að hefast á eldhúsborðinu undir (rökum) klút.</dd>
 
-            <dt>Skiptu deiginu upp í kúlur</dt>
-            <dd>Ef þú hefur tíma skaltu leyfa þeim að hefast á eldhúsborðinu undir (rökum) klút.</dd>
-
-            <dt>Fletja út, skella áleggjum á og baka</dt>
-            <dd>Við eins mikinn hita og þú getur eða treystir þér til að elda við ;)</dd>
-        </dl>
-        <a rel="license" class="noprint" style="opacity:0.4;filter:alpha(opacity=40);"
-            href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License"
-            style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br />
-    </aside>
-</main>
-<script src="app.js"></script>
+                <dt>Fletja út, skella áleggjum á og baka</dt>
+                <dd>Við eins mikinn hita og þú getur eða treystir þér til að elda við ;)</dd>
+            </dl>
+            <a rel="license" class="noprint" style="opacity:0.4;filter:alpha(opacity=40);"
+                href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License"
+                style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br />
+        </aside>
+    </main>
+    <script src="app.js"></script>
 </body>
-
 </html>
