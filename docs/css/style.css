@@ -112,9 +112,17 @@
 	
 	i {color: lightgray;}
 	
-	.info H2:before {
+	.info dt {
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+	.info dt::before {
 		content: counter(index) ". ";
 		counter-increment: index;  /* Add 1 to index */
+	}
+	.info dd {
+		margin-left: 0;
+		margin-bottom: 1em;
 	}
 	
 	#menu {
