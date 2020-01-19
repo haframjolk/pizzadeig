@@ -4,4 +4,4 @@ Pizzadeig is a fork of [Pizzadeig Loga](https://p.logihelgu.com/) by Logi Helgu,
 
 ## Live site
 
-[Pizzadeig on GitHub Pages](https://reyniraron.github.io/pizzadeig/)
+[Pizzadeig on GitHub Pages](https://haframjolk.github.io/pizzadeig/)
