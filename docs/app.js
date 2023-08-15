@@ -61,6 +61,11 @@ function setDisplayedValue(newValue) {
     saveNumberOfPizzas(inputField.value);
 }
 
+// Increment the number of pizzas by increment
+function incrementValue(increment) {
+    setDisplayedValue(Number(inputField.value) + increment);
+}
+
 /* ============
    DOM elements
    ============ */
@@ -88,8 +93,8 @@ if (!inputField.value) {
    Events
    ====== */
 // Allow buttons to increment/decrement number of pizzas
-minusBtn.addEventListener("click", () => setDisplayedValue(Number(inputField.value) - 1));
-plusBtn.addEventListener("click", () => setDisplayedValue(Number(inputField.value) + 1));
+minusBtn.addEventListener("click", () => incrementValue(-1));
+plusBtn.addEventListener("click", () => incrementValue(+1));
 // Allow typing a number into the input field
 inputField.addEventListener("keyup", () => setDisplayedValue(inputField.value));
 // Prevent form from submitting if the user presses return
