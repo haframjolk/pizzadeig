@@ -86,7 +86,7 @@ inputContainer.appendChild(inputField);
 
 // If input field has no value, get previous value from localStorage
 if (!inputField.value) {
-    inputField.value = window.localStorage.getItem("value");
+    inputField.value = window.localStorage.getItem("value") || defaultNoOfPizzas;
 }
 
 /* ======
